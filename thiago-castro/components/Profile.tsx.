@@ -1,0 +1,39 @@
+import React from 'react';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import Profile from '../components/Profile'; // Aqui estamos chamando sua peça de LEGO
+
+export default function Home() {
+  return (
+    <SafeAreaView style={styles.container}>
+      {/* Título da Disciplina */}
+      <View style={styles.header}>
+        <Text style={styles.title}>
+          App criado para a disciplina Programação para Dispositivos Móveis
+        </Text>
+      </View>
+      
+      {/* Seu componente Profile aparecendo aqui */}
+      <Profile />
+      
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f0f0f0',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  header: {
+    marginBottom: 30,
+    paddingHorizontal: 20,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#333',
+  },
+});
