@@ -13,6 +13,7 @@ const Profile = () => {
       <Text style={styles.bio}>
         Estudante de Sistemas para Internet. 
         Interessado em desenvolvimento mobile e novas tecnologias.
+        No 4º semestre da Universidade Católica de Pernambuco, buscando aprender e crescer na área de desenvolvimento.
       </Text>
     </View>
   );
